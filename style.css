@@ -105,7 +105,7 @@ body{
     left: 20px;
     width: 50px;
     height: 70px;
-    z-index: 2;
+    z-index: 5;
     transform: rotate(-5deg); 
 }
 /* ----------------------------- */
@@ -176,6 +176,21 @@ body{
 
 .b-div{
     display: flex;
+}
+
+.b-div-1{
+    margin-top: 60px;
+}
+
+.b-div-3{
+    margin-top: 60px;
+}
+
+.c-div{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 120px;
 }
 
 .common-b-div img{
@@ -292,3 +307,439 @@ span{
     background-size: cover;
     height: 70vh;
 }
+
+/* Animation part */
+
+.slideup{
+    position: relative;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-name: myAnimation;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+@keyframes myAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(50px);    
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* -------------------------------------- */
+.imgWrap1{
+    position: relative;
+    overflow: hidden;
+}
+
+.imgWrap1 .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* inset: 0; alternative for 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 2;
+}
+
+.imgWrap1 .overlay h2{
+    color: white;
+    font-family: "Montaga";
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 31px;
+}
+
+.imgWrap1:hover .overlay{
+    opacity: 1;
+}
+
+.imgWrap1:hover img:not(.tag){
+    transform: scale(1.1);
+}
+
+.imgWrap1 img:not(.tag){
+    transition: transform 0.5s ease;
+}
+/* ------------------------------------- */
+.imgWrap2{
+    position: relative;
+    overflow: hidden;
+}
+
+.imgWrap2 .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* inset: 0; alternative for 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 2;
+}
+
+.imgWrap2 .overlay h2{
+    color: white;
+    font-family: "Montaga";
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 31px;
+}
+
+.imgWrap2:hover .overlay{
+    opacity: 1;
+}
+
+.imgWrap2:hover img:not(.tag){
+    transform: scale(1.1);
+}
+
+.imgWrap2 img:not(.tag){
+    transition: transform 0.5s ease;
+}
+/* ----------------------------------------- */
+.imgContentWrap1{
+    position: relative;
+    overflow: hidden;
+}
+
+.imgContentWrap1 .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* inset: 0; alternative for 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 2;
+}
+
+.imgContentWrap1 .overlay h2{
+    color: white;
+    font-family: "Montaga";
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 31px;
+}
+
+.imgContentWrap1:hover .overlay{
+    opacity: 1;
+}
+
+.imgContentWrap1:hover img{
+    transform: scale(1.1);
+}
+
+.imgContentWrap1 img{
+    transition: transform 0.5s ease;
+}
+/* ------------------------------------ */
+.imgContentWrap2{
+    position: relative;
+    overflow: hidden;
+}
+
+.imgContentWrap2 .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* inset: 0; alternative for 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 2;
+}
+
+.imgContentWrap2 .overlay h2{
+    color: white;
+    font-family: "Montaga";
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 31px;
+}
+
+.imgContentWrap2:hover .overlay{
+    opacity: 1;
+}
+
+.imgContentWrap2:hover img{
+    transform: scale(1.1);
+}
+
+.imgContentWrap2 img{
+    transition: transform 0.5s ease;
+}
+/* ----------------------------------------- */
+.imgContentWrap3{
+    position: relative;
+    overflow: hidden;
+}
+
+.imgContentWrap3 .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* inset: 0; alternative for 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 2;
+}
+
+.imgContentWrap3 .overlay h2{
+    color: white;
+    font-family: "Montaga";
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 31px;
+}
+
+.imgContentWrap3:hover .overlay{
+    opacity: 1;
+}
+
+.imgContentWrap3:hover img{
+    transform: scale(1.1);
+}
+
+.imgContentWrap3 img{
+    transition: transform 0.5s ease;
+}
+/* --------------------------------------- */
+.imgContentWrap4{
+    position: relative;
+    overflow: hidden;
+}
+
+.imgContentWrap4 .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* inset: 0; alternative for 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 2;
+}
+
+.imgContentWrap4 .overlay h2{
+    color: white;
+    font-family: "Montaga";
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 31px;
+}
+
+.imgContentWrap4:hover .overlay{
+    opacity: 1;
+}
+
+.imgContentWrap4:hover img{
+    transform: scale(1.1);
+}
+
+.imgContentWrap4 img{
+    transition: transform 0.5s ease;
+}
+/* ----------------------------------- */
+.imgContentWrap5{
+    position: relative;
+    overflow: hidden;
+}
+
+.imgContentWrap5 .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* inset: 0; alternative for 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 2;
+}
+
+.imgContentWrap5 .overlay h2{
+    color: white;
+    font-family: "Montaga";
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 31px;
+}
+
+.imgContentWrap5:hover .overlay{
+    opacity: 1;
+}
+
+.imgContentWrap5:hover img{
+    transform: scale(1.1);
+}
+
+.imgContentWrap5 img{
+    transition: transform 0.5s ease;
+}
+/* ----------------------------------- */
+.imgContentWrap6{
+    position: relative;
+    overflow: hidden;
+}
+
+.imgContentWrap6 .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* inset: 0; alternative for 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 2;
+}
+
+.imgContentWrap6 .overlay h2{
+    color: white;
+    font-family: "Montaga";
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 31px;
+}
+
+.imgContentWrap6:hover .overlay{
+    opacity: 1;
+}
+
+.imgContentWrap6:hover img{
+    transform: scale(1.1);
+}
+
+.imgContentWrap6 img{
+    transition: transform 0.5s ease;
+}
+/* --------------------------------------- */
+.imgContentWrap7{
+    position: relative;
+    overflow: hidden;
+}
+
+.imgContentWrap7 .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* inset: 0; alternative for 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 2;
+}
+
+.imgContentWrap7 .overlay h2{
+    color: white;
+    font-family: "Montaga";
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 31px;
+}
+
+.imgContentWrap7:hover .overlay{
+    opacity: 1;
+}
+
+.imgContentWrap7:hover img{
+    transform: scale(1.1);
+}
+
+.imgContentWrap7 img{
+    transition: transform 0.5s ease;
+}
+/* ----------------------------------- */
