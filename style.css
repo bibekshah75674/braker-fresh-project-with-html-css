@@ -153,11 +153,34 @@ body{
     0 10px 25px rgba(0, 0, 0, 0.08),
     0 4px 10px rgba(0, 0, 0, 0.04);
 }
+
+.cards{
+    position: relative;
+}
+.card1{
+    position: absolute;
+    top: 120px;
+    left: 80px;
+}
+.card2{
+    position: absolute;
+    left: 400px;
+}
+.card3{
+    position: absolute;
+    top: 120px;
+    left: 700px;
+}
+.card4{
+    position: absolute;
+    left: 1000px;
+}
 /* --------------------------------------- */
 
 .a-div{
     margin: 80px;
-    margin-bottom: 100px;
+    margin-bottom: 600px;
+    height: 120vh;
 }
 
 .a-div .heading-div h2{
@@ -176,21 +199,7 @@ body{
 
 .b-div{
     display: flex;
-}
-
-.b-div-1{
-    margin-top: 60px;
-}
-
-.b-div-3{
-    margin-top: 60px;
-}
-
-.c-div{
-    display: flex;
-    justify-content: center;
     position: relative;
-    bottom: 120px;
 }
 
 .common-b-div img{
@@ -199,6 +208,41 @@ body{
     0 10px 25px rgba(0, 0, 0, 0.08),
     0 4px 10px rgba(0, 0, 0, 0.04);
 }
+
+.b-div-1{
+    position: absolute;
+    top: 120px;
+    left: 0;
+    box-shadow:
+        0 30px 60px rgba(0,0,0,0.25),
+        0 10px 20px rgba(0,0,0,0.15);
+}
+
+.b-div-2{
+    position: absolute;
+    left: 400px;
+    z-index: 1;
+}
+
+.b-div-3{
+    position: absolute;
+    top: 120px;
+    right: 0;
+    box-shadow:
+        0 30px 60px rgba(0,0,0,0.25),
+        0 10px 20px rgba(0,0,0,0.15);
+}
+
+.c-div{
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-end; */
+    position: relative;
+    top: 750px;
+    left: 80px;
+    z-index: 5;
+}
+
 /* --------------------------------------- */
 .new_image_wrapper{
     position: relative;
@@ -218,8 +262,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 80px;
+    padding: 80px;
     column-gap: 180px;
+
+    background-color: #FFF7F4;
+    height: 120vh;
 }
 
 .child_content{
@@ -317,6 +364,7 @@ span{
     animation-duration: 1s;
     animation-timing-function: ease-out;
 }
+
 @keyframes myAnimation{
     from{
         opacity: 0;
@@ -743,3 +791,65 @@ span{
     transition: transform 0.5s ease;
 }
 /* ----------------------------------- */
+.card1{
+    transition: transform 0.3s ease; 
+}
+
+.card1:hover{
+    transform: translateY(-15px);
+    z-index: 1;
+}
+
+.card2{
+    transition: transform 0.3s ease;
+}
+
+.card2:hover{
+    transform: translateY(-15px);
+    z-index: 1;
+}
+
+.card3{
+    transition: transform 0.3s ease;
+}
+
+.card3:hover{
+    transform: translateY(-15px);
+    z-index: 1;
+}
+
+.card4{
+    transition: transform 0.3s ease;
+}
+
+.card4:hover{
+    transform: translateY(-15px);
+    z-index: 1;
+}
+/* ------------------------------------- */
+.b-div-1{
+    transition: transform 0.3s ease; 
+}
+
+.b-div-1:hover{
+    transform: translateY(-15px);
+    z-index: 3;
+}
+.b-div-2{
+    transition: transform 0.3s ease; 
+}
+
+.b-div-2:hover{
+    transform: translateY(-15px);
+    z-index: 3;
+}
+.b-div-3{
+    transition: transform 0.3s ease; 
+}
+
+.b-div-3:hover{
+    transform: translateY(-15px);
+    z-index: 3;
+}
+
+
